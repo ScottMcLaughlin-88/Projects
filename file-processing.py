@@ -125,6 +125,29 @@ def array_practice():
     python_average = python_total / len(arr)
     print(f"The Python average is {python_average}")
 
+def swap_practice():
+    a = 1
+    b = 2
+    temp = b
+#place one variable in memory, do the swap
+    b = a
+    a = temp
+    print(f"a = {a} and b = {b}")
+
+def arr_swap(arr, i, j):
+    temp = arr[j]
+    arr[j] = arr[i]
+    arr[i] = temp
+    
+def reverse_arr(arr):
+    i = 0
+    j = len(arr)-1
+    while i < j:
+        arr_swap(arr,i,j)
+        print(arr)
+        i += 1
+        j -= 1
+
 def review():
     a = [[1,5],
          [5,10]]
@@ -149,6 +172,11 @@ if __name__ == '__main__':
     arr2 = [1, 3, 2, 4, 5]
     med_2 = med_arr([4,6,8,10,13,15])
     print(med_2)
+#when we are calling a function in main, how do we know what variables to call in ()
+    # swap_practice()
+    # arr_swap(arr, 0, 1)
+    reverse_arr(arr)
+    print(arr)
     # array_range_python(arr)
     # small, large = array_range_for(arr)
     # print(small,large)
