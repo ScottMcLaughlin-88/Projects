@@ -10,6 +10,8 @@ def array_practice(arr):
         if val % 2 == 0:
             even += 1
         else:
+
+test
             odd += 1
     print(f"There are {even} even numbers and {odd} odd numbers.")
     first = arr[0]
